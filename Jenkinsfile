@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
                 dir("/var/lib/jenkins/jobs/pipelinemaven") {
-                sh 'mvn -f initial/pom.xml clean package'
+                sh 'mvn -f d1/pom.xml clean package'
                 }
             }
         }
