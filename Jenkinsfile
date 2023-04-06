@@ -13,8 +13,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir("/var/lib/jenkins/jobs/pipelinemaven") {
-                sh 'mvn -f VCIT_AST1/d1/POM.xml clean package'
+                dir("/var/lib/jenkins/workspace/pipelinemaven") {
+                sh 'mvn -f POM.xml clean package'
                 }
             }
         }
