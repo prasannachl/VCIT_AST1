@@ -23,7 +23,7 @@ pipeline {
        always {
           junit(
         allowEmptyResults: true,
-        testResults: 'test/results/*.xml'
+        testResults: '*/test-reports/.xml'
       )
       }
    } 
