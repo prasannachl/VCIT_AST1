@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
                 dir("/var/lib/jenkins/jobs/pipelinemaven") {
-                sh 'mvn -f VCIT_AST1/pom.xml clean package'
+                sh 'mvn -B -DskipTests clean package'
                 }
             }
         }
